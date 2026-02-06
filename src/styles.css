@@ -1,0 +1,267 @@
+:root {
+  color-scheme: light;
+  font-family: 'Inter', system-ui, sans-serif;
+  background-color: #f5f7fb;
+  color: #1c2430;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.app-shell {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 24px;
+  background: #ffffff;
+  border-bottom: 1px solid #e3e8ef;
+}
+
+.app-header h1 {
+  margin: 0 0 4px;
+  font-size: 20px;
+}
+
+.app-header p {
+  margin: 0;
+  color: #6b7280;
+}
+
+.app-body {
+  display: grid;
+  grid-template-columns: 280px 1fr 320px;
+  flex: 1;
+  overflow: hidden;
+}
+
+.panel {
+  padding: 16px;
+  overflow: auto;
+  background: #ffffff;
+}
+
+.panel-left {
+  border-right: 1px solid #e3e8ef;
+}
+
+.panel-right {
+  border-left: 1px solid #e3e8ef;
+}
+
+.panel-center {
+  padding: 0;
+}
+
+.panel-bottom {
+  border-top: 1px solid #e3e8ef;
+  background: #0f172a;
+  color: #e2e8f0;
+  max-height: 240px;
+}
+
+.panel-bottom-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.palette-group h3 {
+  margin-bottom: 8px;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: #6b7280;
+}
+
+.palette-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.palette-item {
+  text-align: left;
+  border: 1px solid #e3e8ef;
+  border-radius: 12px;
+  padding: 12px;
+  background: #f8fafc;
+  cursor: pointer;
+  transition: border 0.2s ease;
+}
+
+.palette-item:hover {
+  border-color: #2563eb;
+}
+
+.palette-title {
+  font-weight: 600;
+}
+
+.palette-type {
+  font-size: 12px;
+  color: #6b7280;
+}
+
+.palette-description {
+  font-size: 12px;
+  color: #94a3b8;
+  margin-top: 6px;
+}
+
+.node-card {
+  background: #ffffff;
+  border: 1px solid #d7e0ea;
+  border-radius: 12px;
+  padding: 12px;
+  min-width: 200px;
+  font-size: 12px;
+  box-shadow: 0 10px 20px rgba(15, 23, 42, 0.06);
+}
+
+.node-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.node-name {
+  font-weight: 600;
+}
+
+.node-type {
+  background: #e2e8f0;
+  color: #1e293b;
+  border-radius: 999px;
+  padding: 2px 8px;
+  font-size: 10px;
+}
+
+.node-handles {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.node-handle-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+
+.node-handle-label {
+  color: #6b7280;
+}
+
+.node-handle,
+.node-target {
+  width: 10px;
+  height: 10px;
+  background: #2563eb;
+  border-radius: 50%;
+}
+
+.node-target {
+  background: #64748b;
+}
+
+.config-section {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 16px;
+}
+
+.config-section input,
+.config-section textarea,
+.config-section select {
+  padding: 8px 10px;
+  border: 1px solid #d7e0ea;
+  border-radius: 8px;
+  font-size: 13px;
+}
+
+.config-section.checkbox {
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.field-editor {
+  border: 1px solid #e3e8ef;
+  border-radius: 8px;
+  padding: 12px;
+  margin-bottom: 12px;
+  background: #f8fafc;
+}
+
+.field-row {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 8px;
+}
+
+.field-row.checkbox {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.primary-button,
+.secondary-button {
+  border: none;
+  border-radius: 10px;
+  padding: 10px 14px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.primary-button {
+  background: #2563eb;
+  color: #ffffff;
+}
+
+.secondary-button {
+  background: #e2e8f0;
+  color: #1e293b;
+}
+
+.link-button {
+  background: none;
+  border: none;
+  color: #2563eb;
+  cursor: pointer;
+  padding: 0;
+}
+
+.json-preview {
+  margin: 12px 0 0;
+  white-space: pre-wrap;
+  word-break: break-word;
+  font-size: 12px;
+  max-height: 180px;
+  overflow: auto;
+}
+
+.react-flow__renderer {
+  background: #f8fafc;
+}
